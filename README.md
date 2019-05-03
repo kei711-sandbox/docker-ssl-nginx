@@ -5,6 +5,9 @@ docker-ssl-nginx
 
 ```bash
 gibo dump JetBrains macOS > .gitignore
+echo "### custom" >> .gitignore
+echo "keys/ca*" >> .gitignore
+echo "keys/server*" >> .gitignore
 ```
 
 ## Generate keys
@@ -123,6 +126,11 @@ docker container exec -it docker-ssl-nginx ash
 
 docker logs -f docker-ssl-nginx
 ```
+
+## Browse
+
+https://localhost:8443/
+
 
 
 # References
